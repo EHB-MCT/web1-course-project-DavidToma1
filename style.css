@@ -24,7 +24,7 @@ a:hover {
 
 .wrapper {
 	background-color: yellow;
-	width: 90%;
+	width: 50%;
 	margin: 0 auto;
 }
 .image {
@@ -39,5 +39,7 @@ a:hover {
 	padding: 0 100px 0 100px;
 }
 .logo img {
-	width: 100px;
+	width: 185px;
+	height: 50px;
+	margin-right: px;
 }
