@@ -33,3 +33,7 @@ a:hover {
 .tekst {
 	padding: 0 100px 0 100px;
 }
+
+.logo {
+	display: flex;
+}
