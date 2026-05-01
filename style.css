@@ -119,17 +119,25 @@ a:hover {
 .project-container {
 	padding: 40px 20px;
 	background-color: #ff0000;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	padding: 40px;
+	flex-wrap: wrap;
 }
 
 .project-item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 800px;
 	margin: 0 auto 60px auto;
 	text-align: center;
+	flex: 1;
+	max-width: 450px;
 }
-
+.project-item:hover {
+	transform: scale(1.03);
+}
 .project-image img {
 	width: 100%;
 	max-width: 500px;
@@ -139,7 +147,6 @@ a:hover {
 }
 
 .project-tekst h1 {
-
 	margin-bottom: 15px;
 }
 
