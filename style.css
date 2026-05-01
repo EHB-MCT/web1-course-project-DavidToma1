@@ -47,8 +47,8 @@ a:hover {
 }
 
 .logo img {
-	width: 185px;
-	height: 185px;
+	width: 50px;
+	height: 50px;
 	margin-right: px;
 }
 
@@ -62,4 +62,14 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #f0ede9;
+	padding: 60px 20px;
+	width: 100%;
 }
