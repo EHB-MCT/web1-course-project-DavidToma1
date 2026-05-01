@@ -31,6 +31,7 @@ a:hover {
 }
 
 .wrapper {
+	margin-top: 100px;
 	background-color: yellow;
 	width: 50%;
 	margin: 0 auto;
@@ -42,7 +43,7 @@ a:hover {
 	display: flex;
 
 	align-items: center;
-	margin-top: 0px;
+	margin-top: 100px;
 	margin-bottom: 100px;
 }
 
@@ -97,7 +98,7 @@ a:hover {
 	margin-left: auto;
 	padding: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 400px) {
 	.hamburger {
 		display: block;
 	}
@@ -117,6 +118,7 @@ a:hover {
 	}
 }
 .project-container {
+	margin-top: 500px;
 	padding: 40px 20px;
 	background-color: #ff0000;
 	display: flex;
