@@ -116,3 +116,34 @@ a:hover {
 		display: flex;
 	}
 }
+.project-container {
+	padding: 40px 20px;
+	background-color: #ff0000;
+}
+
+.project-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 800px;
+	margin: 0 auto 60px auto;
+	text-align: center;
+}
+
+.project-image img {
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.project-tekst h1 {
+
+	margin-bottom: 15px;
+}
+
+.project-tekst p {
+	line-height: 1.6;
+	color: #333;
+}
