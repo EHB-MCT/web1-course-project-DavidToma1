@@ -12,6 +12,8 @@ a:hover {
 
 .header {
 	display: flex;
+	align-items: center;
+	background-color: rgb(0, 170, 255);
 }
 
 .navigation {
@@ -77,4 +79,35 @@ a:hover {
 	background-color: #ff9100;
 	padding: 60px 20px;
 	width: 100%;
+}
+#menu-toggle {
+	display: none;
+}
+
+.hamburger {
+	display: none;
+	font-size: 30px;
+	cursor: pointer;
+	color: white;
+	margin-left: auto;
+	padding: 10px;
+}
+@media (max-width: 768px) {
+	.hamburger {
+		display: block;
+	}
+
+	.navigation {
+		display: none;
+		flex-direction: column;
+		width: 100%;
+		background-color: rgb(0, 170, 255);
+		position: absolute;
+		top: 60px;
+		left: 0;
+	}
+
+	#menu-toggle:checked ~ .navigation {
+		display: flex;
+	}
 }
