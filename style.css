@@ -157,16 +157,14 @@ a:hover {
 	color: #333;
 }
 .grote-image2 {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .grote-image2 img {
 	width: 50%;
 	height: 50%;
-	
-	margin-top: 80px;
-	align-items: center;
 
+	margin-top: 80px;
 }
