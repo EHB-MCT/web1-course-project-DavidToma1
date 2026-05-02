@@ -76,7 +76,7 @@ a:hover {
 	margin-bottom: 80px;
 	margin-left: 20px;
 }
-fg
+
 .hero {
 	display: flex;
 	justify-content: center;
@@ -85,7 +85,6 @@ fg
 	background-color: #ff9100;
 	padding: 60px 20px;
 	width: 100%;
-	max-width: 90%;
 }
 #menu-toggle {
 	display: none;
@@ -126,13 +125,16 @@ fg
 	gap: 30px;
 	padding: 40px;
 	flex-wrap: wrap;
+	gap: 50px;
+	row-gap: 60px;
+	column-gap: 40px;
 }
 
 .project-item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 0 auto 60px auto;
+	margin: 0;
 	text-align: center;
 	flex: 1;
 	max-width: 450px;
