@@ -1,3 +1,8 @@
+body {
+	overflow-x: hidden;
+	margin: 0;
+}
+
 a {
 	background-color: #000000;
 	padding: 15px;
@@ -6,10 +11,6 @@ a {
 	font-weight: bold;
 }
 
-body {
-	overflow-x: hidden;
-	margin: 0;
-}
 a:hover {
 	background-color: #333;
 }
@@ -30,6 +31,40 @@ a:hover {
 	height: 50px;
 	transition: all 0.3s ease;
 }
+.logo img {
+	width: 50px;
+	height: 50px;
+	margin-right: 5px;
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #ff9100;
+	padding: 60px 20px;
+	width: 100%;
+}
+
+.project-container {
+	padding: 80px 20px;
+	background-color: #ff0000;
+	display: flex;
+	justify-content: center;
+
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+.tekst {
+	text-align: center;
+	padding: 40px;
+	max-width: 700px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+	margin-top: 80px;
+}
 
 .wrapper {
 	margin-top: 100px;
@@ -44,21 +79,6 @@ a:hover {
 	align-items: center;
 	margin-top: 100px;
 	margin-bottom: 100px;
-}
-
-.tekst {
-	text-align: center;
-	padding: 40px;
-	max-width: 700px;
-	margin: 0 auto;
-	margin-bottom: 80px;
-	margin-top: 80px;
-}
-
-.logo img {
-	width: 50px;
-	height: 50px;
-	margin-right: 5px;
 }
 
 .grote-image {
@@ -76,15 +96,19 @@ a:hover {
 	margin-left: 20px;
 }
 
-.hero {
+.grote-image2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
-	background-color: #ff9100;
-	padding: 60px 20px;
-	width: 100%;
 }
+
+.grote-image2 img {
+	width: 50%;
+	height: 50%;
+
+	margin-top: 80px;
+}
+
 #menu-toggle {
 	display: none;
 }
@@ -97,34 +121,32 @@ a:hover {
 	margin-left: auto;
 	padding: 10px;
 }
+
 @media (max-width: 768px) {
 	.hamburger {
 		display: block;
 	}
 
 	.navigation {
-		display: none;
+		display: flex;
 		flex-direction: column;
 		width: 100%;
 		background-color: rgb(0, 170, 255);
 		position: absolute;
 		top: 60px;
 		left: 0;
+
+		opacity: 0;
+		transform: translateY(-20px);
+		pointer-events: none;
+		transition: all 0.3s ease;
 	}
 
 	#menu-toggle:checked ~ .navigation {
-		flex-direction: column;
-		display: flex;
+		opacity: 1;
+		transform: translateY(0);
+		pointer-events: auto;
 	}
-}
-.project-container {
-	padding: 80px 20px;
-	background-color: #ff0000;
-	display: flex;
-	justify-content: center;
-
-	flex-wrap: wrap;
-	gap: 50px;
 }
 
 .project-item {
@@ -154,16 +176,4 @@ a:hover {
 .project-tekst p {
 	line-height: 1.6;
 	color: #333;
-}
-.grote-image2 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.grote-image2 img {
-	width: 50%;
-	height: 50%;
-
-	margin-top: 80px;
 }
