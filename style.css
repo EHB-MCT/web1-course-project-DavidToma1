@@ -98,7 +98,7 @@ a:hover {
 	margin-left: auto;
 	padding: 10px;
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
 	.hamburger {
 		display: block;
 	}
